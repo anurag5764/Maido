@@ -1,5 +1,6 @@
-import React from 'react';
-import { Facebook, Instagram, MessageCircle, Heart } from 'lucide-react';
+import React from "react";
+import { Facebook, Instagram, MessageCircle, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,29 +14,83 @@ const Footer = () => {
               </div>
               <h3 className="text-2xl font-bold text-white">Maido</h3>
             </div>
-            <p className="text-sm">Connecting trusted domestic helpers with Indian households since 2024.</p>
+            <p className="text-sm">
+              Connecting trusted domestic helpers with Indian households since
+              2024.
+            </p>
           </div>
-          
+
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">
+              Quick Links
+            </h4>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
+              <li>
+                <Link to="/" className="hover:text-white transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/privacy-policy"
+                  className="hover:text-white transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/terms-and-conditions"
+                  className="hover:text-white transition-colors"
+                >
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/terms-and-conditions"
+                  className="hover:text-white transition-colors"
+                >
+                  Refund Policy
+                </Link>
+              </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-white transition-colors">House Cleaning</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Cooking</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Babysitting</a></li>
+              <li>
+                <Link
+                  to="/services"
+                  className="hover:text-white transition-colors"
+                >
+                  House Cleaning
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="hover:text-white transition-colors"
+                >
+                  Cooking
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="hover:text-white transition-colors"
+                >
+                  Babysitting
+                </Link>
+              </li>
             </ul>
           </div>
-          
+
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Connect With Us</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">
+              Connect With Us
+            </h4>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-white transition-colors">
                 <Facebook className="w-6 h-6" />
@@ -49,13 +104,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-          <p className="text-sm">© {new Date().getFullYear()} Maido. All rights reserved.</p>
+          <p className="text-sm">
+            © {new Date().getFullYear()} Maido. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
   );
 };
 
-export default Footer
+export default Footer;
