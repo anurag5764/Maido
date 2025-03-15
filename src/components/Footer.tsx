@@ -48,7 +48,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/terms-and-conditions"
+                  to="/refund-policy"
                   className="hover:text-white transition-colors"
                 >
                   Refund Policy
